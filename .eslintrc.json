@@ -22,11 +22,14 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [ "@typescript-eslint", "react", "simple-import-sort"],
   "rules": {
+    "max-lines":["error",80],
     "comma-dangle": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   },
   "settings": {
     "import/parsers": {
