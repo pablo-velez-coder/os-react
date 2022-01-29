@@ -2,6 +2,7 @@
   "env": {
     "browser": true,
     "es2021": true,
+    "jest": true,
     "node": true
   },
   "extends": [
@@ -26,10 +27,15 @@
   "rules": {
     "max-lines":["error",80],
     "comma-dangle": "off",
+    "import/prefer-default-export": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "import/extensions": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/function-component-definition": "off"
   },
   "settings": {
     "import/parsers": {
